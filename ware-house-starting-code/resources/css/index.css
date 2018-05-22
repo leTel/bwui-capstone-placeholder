@@ -1,0 +1,79 @@
+.hero {
+  width: 100%;
+  height: 21.75rem;
+  margin-top: 3rem;
+  border-radius: 1.5rem;
+  background-image: url('../img/home/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 1);
+}
+
+.hero h2 {
+  margin-top: 10rem;
+  padding: 1.5rem 0;
+  color: hsla(0, 100%, 100%, 1);
+  font-family: Helvetica;
+  font-weight: bold;
+  text-align: center;
+  color: #FFAA4F;
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
+
+.products {
+  padding: 0 5rem 6rem 5rem;
+}
+
+.products h2 {
+  margin-top: 2rem;
+}
+
+.landing .product-list {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.categories h3 {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1020px) {
+  .landing .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 760px) {
+  .landing .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .hero {
+    padding-left: 0;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero h2 {
+    max-width: 100%;
+    margin-top: 8rem;
+  }
+
+  .hero p {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .landing .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .products {
+    padding: 0;
+  }
+}
